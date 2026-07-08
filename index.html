@@ -1,18 +1,157 @@
-<!-- ⬆️ Inline Ad (above Continue button) -->
-<div class="inline-ad">
-  <script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redirecting</title>
 
-  <ins class="eas6a97888e10"
-       data-zoneid="5969268"
-       data-keywords="keywords"
-       data-sub="123450000"
-       data-block-ad-types="0"
-       data-ex_av="name">
-  </ins>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      padding-top: 100px;
+      padding-bottom: 120px;
+    }
 
-  <script>
-    (AdProvider = window.AdProvider || []).push({
-      "serve": {}
-    });
-  </script>
-</div>
+    .header-ad,
+    .footer-ad {
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      background: black;
+      z-index: 9999;
+    }
+
+    .header-ad {
+      top: 0;
+      height: 90px;
+    }
+
+    .footer-ad {
+      bottom: 0;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inline-ad {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .continue-button,
+    .telegram-button {
+      background: yellow;
+      color: black;
+      font-size: 6vw;
+      font-weight: bold;
+      padding: 4vw 8vw;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 0 20px yellow;
+      display: flex;
+      align-items: center;
+      gap: 3vw;
+      margin-top: 20px;
+      animation: blink 1.2s infinite;
+    }
+
+    .continue-button img,
+    .telegram-button img {
+      height: 6vw;
+      width: auto;
+    }
+
+    @keyframes blink {
+      0%,100% {
+        filter: brightness(1);
+      }
+      50% {
+        filter: brightness(1.7);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Ad -->
+  <div class="header-ad">
+    <script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script>
+
+    <ins class="eas6a97888e10"
+         data-zoneid="5969268"
+         data-keywords="keywords"
+         data-sub="123450000"
+         data-block-ad-types="0"
+         data-ex_av="name">
+    </ins>
+
+    <script>
+      (AdProvider = window.AdProvider || []).push({
+        "serve": {}
+      });
+    </script>
+  </div>
+
+  <!-- Inline Ad -->
+  <div class="inline-ad">
+    <script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script>
+
+    <ins class="eas6a97888e10"
+         data-zoneid="5969268"
+         data-keywords="keywords"
+         data-sub="123450000"
+         data-block-ad-types="0"
+         data-ex_av="name">
+    </ins>
+
+    <script>
+      (AdProvider = window.AdProvider || []).push({
+        "serve": {}
+      });
+    </script>
+  </div>
+
+  <!-- Continue Button -->
+  <button class="continue-button"
+    onclick="window.location.href='https://odd-bush-2889.rahulkeriwal.workers.dev/'">
+    👉👉 Continue 👈👈
+    <img src="https://cdn-icons-png.flaticon.com/512/60/60510.png" alt="">
+  </button>
+
+  <!-- Telegram Button -->
+  <button class="telegram-button"
+    onclick="window.location.href='https://t.me/+2Jav3kMHIn00ODZl'">
+    📲 Join Telegram
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="">
+  </button>
+
+  <!-- Bottom Ad -->
+  <div class="footer-ad">
+    <script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script>
+
+    <ins class="eas6a97888e10"
+         data-zoneid="5969268"
+         data-keywords="keywords"
+         data-sub="123450000"
+         data-block-ad-types="0"
+         data-ex_av="name">
+    </ins>
+
+    <script>
+      (AdProvider = window.AdProvider || []).push({
+        "serve": {}
+      });
+    </script>
+  </div>
+
+</body>
+</html>
